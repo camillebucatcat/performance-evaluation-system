@@ -21,7 +21,6 @@ export class CreateComponent implements OnInit {
   taxRate = 0.125;
   shippingRate = 65.0;
   discountRate = 0.15;
-  
 
   constructor(private formBuilder: FormBuilder) { }
 
@@ -55,7 +54,7 @@ export class CreateComponent implements OnInit {
       shippingTaxno: ['', [Validators.required]],
       productName: ['', [Validators.required]],
       rate: ['', [Validators.required]],
-    });    
+    });
 
   }
 

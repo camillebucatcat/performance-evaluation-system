@@ -41,7 +41,6 @@ export class ClientLogoComponent implements OnInit {
    */
    public Responsive: SwiperOptions = {
     slidesPerView: 1,
-    pagination: true,
     mousewheel: true,
     breakpoints:{
       768:{

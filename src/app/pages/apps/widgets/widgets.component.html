@@ -6,7 +6,7 @@
   <div class="col-xl-3 col-md-6" *ngFor="let data of tileBoxs1">
       <!-- card -->
       <div class="card card-animate">
-          <div class="card-body" [ngClass]=" { 'bg-info': data.bgColor}">
+          <div class="card-body" [ngClass]=" { 'bg-secondary': data.bgColor}">
               <div class="d-flex align-items-center">
                   <div class="flex-grow-1">
                       <p class="text-uppercase fw-medium text-{{data.labelClass}} mb-0">{{data.label}}</p>
@@ -84,7 +84,7 @@
 
 <div class="row">
   <div class="col-xl-3 col-md-6" *ngFor="let data of tileBoxs4">
-      <div class="card  card-height-100" [ngClass]=" { 'bg-success': data.bgColor}">
+      <div class="card  card-height-100" [ngClass]=" { 'bg-danger': data.bgColor}">
           <div class="card-body">
                <div class="d-flex align-items-center">
                    <div class="avatar-sm flex-shrink-0">
@@ -213,7 +213,7 @@
   <div class="col-lg-4" *ngFor="let data of otherWidgets">
       <div class="card">
           <div class="card-body">
-              <h5 class="fs-15 fw-semibold">{{data.title}}</h5>
+              <h5 class="fs-16 fw-semibold">{{data.title}}</h5>
               <p class="text-muted">{{data.subTitle}}</p>
               <div class="d-flex flex-wrap justify-content-evenly">
                    <p class="text-muted mb-0" *ngFor="let item of data.subItem"><i class="{{item.icon}} text-{{item.iconClass}} fs-18 align-middle me-2"></i>{{item.label}}</p>
@@ -256,7 +256,7 @@
                               </div>
                           </div>
                           <div class="col">
-                              <h5 class="text-muted mt-0 mb-1 fs-12 fw-semibold">{{data.time}}</h5>
+                              <h5 class="text-muted mt-0 mb-1 fs-13">{{data.time}}</h5>
                               <a href="javascript:void(0);" class="text-reset fs-14 mb-0">{{data.caption}}</a>
                           </div>
                           <div class="col-sm-auto">
@@ -347,7 +347,7 @@
                                         <label class="form-check-label mb-0 ps-2" for="task_one">{{data.text}}</label>
                                     </div>
                                     <div class="flex-shrink-0 ms-2">
-                                        <p class="text-muted fs-12 mb-0">{{data.date}}</p>
+                                        <p class="text-muted fs-13 mb-0">{{data.date}}</p>
                                     </div>
                                 </div>
                             </li>
@@ -395,13 +395,13 @@
                                   <h6 class="mb-1">Added new <span class="fw-semibold">style collection</span></h6>
                                   <p class="text-muted mb-1">By Nesta Technologies</p>
                                   <div class="d-inline-flex gap-2 border border-dashed p-2 mb-2 w-75">
-                                      <a href="ecommerce/product-detail/1" class="bg-light rounded p-1">
+                                      <a routerLink="/ecommerce/product-detail/1" class="bg-light rounded p-1">
                                           <img src="assets/images/products/img-8.png" alt="" class="img-fluid d-block" />
                                       </a>
-                                      <a href="ecommerce/product-detail/1" class="bg-light rounded p-1">
+                                      <a routerLink="/ecommerce/product-detail/1" class="bg-light rounded p-1">
                                           <img src="assets/images/products/img-2.png" alt="" class="img-fluid d-block" />
                                       </a>
-                                      <a href="ecommerce/product-detail/1" class="bg-light rounded p-1">
+                                      <a routerLink="/ecommerce/product-detail/1" class="bg-light rounded p-1">
                                           <img src="assets/images/products/img-10.png" alt="" class="img-fluid d-block" />
                                       </a>
                                   </div>
@@ -427,7 +427,7 @@
                                   </div>
                               </div>
                               <div class="flex-grow-1 ms-3">
-                                  <h6 class="mb-1">Today offers by <a href="ecommerce/seller-details" class="link-secondary">Digitech Galaxy</a></h6>
+                                  <h6 class="mb-1">Today offers by <a routerLink="/ecommerce/seller-details" class="link-secondary">Digitech Galaxy</a></h6>
                                   <p class="text-muted mb-2">Offer is valid on orders of Rs.500 Or above for selected products only.</p>
                                   <small class="mb-0 text-muted">12 Dec, 2021</small>
                               </div>
@@ -572,8 +572,9 @@
           </div>
           <div class="card-body p-0">
               <div>
-                <apx-chart [series]="basicBarChart.series" [colors]="basicBarChart.colors" [chart]="basicBarChart.chart"
-                [dataLabels]="basicBarChart.dataLabels" [plotOptions]="basicBarChart.plotOptions"></apx-chart>
+                  <apx-chart [series]="basicBarChart.series" [colors]="basicBarChart.colors" [chart]="basicBarChart.chart"
+                      [dataLabels]="basicBarChart.dataLabels" [plotOptions]="basicBarChart.plotOptions"
+                      [xaxis]="basicBarChart.xaxis"></apx-chart>
               </div>
           </div><!-- end card body -->
       </div><!-- end card -->
@@ -610,32 +611,32 @@
               </div>
           </div>
           <div class="card-header p-0 border-0 bg-soft-light">
-            <div class="row g-0 text-center">
-                <div class="col-6 col-sm-4">
-                    <div class="p-3 border border-dashed border-start-0">
-                        <h5 class="mb-1"><span [CountTo]="854" class="counter-value" [from]="0" [duration]="1"></span>
-                            <span class="text-success ms-1 fs-13">49%</span>
-                           
-                        </h5>
-                        <p class="text-muted mb-0">Avg. Session</p>
-                    </div>
-                </div><!--end col-->
-                <div class="col-6 col-sm-4">
-                    <div class="p-3 border border-dashed border-start-0">
-                        <h5 class="mb-1"><span [CountTo]="1278" class="counter-value" [from]="0" [duration]="1"></span>
-                            <span class="text-success ms-1 fs-13">60%<i class="ri-arrow-right-up-line ms-1 align-middle"></i></span>
-                        </h5>
-                        <p class="text-muted mb-0">Conversion Rate</p>
-                    </div>
-                </div><!--end col-->
-                <div class="col-6 col-sm-4">
-                    <div class="p-3 border border-dashed border-start-0 border-end-0">
-                        <h5 class="mb-1"><span [CountTo]="3" class="counter-value" [from]="0" [duration]="1"></span>m <span [CountTo]="40" class="counter-value" [from]="0" [duration]="1"></span>sec
-                        </h5>
-                        <p class="text-muted mb-0">Avg. Ses. Duration</p>
-                    </div>
-                </div><!--end col-->
-            </div>
+              <div class="row g-0 text-center">
+                  <div class="col-6 col-sm-4">
+                      <div class="p-3 border border-dashed border-start-0">
+                          <h5 class="mb-1"><span [CountTo]="854" class="counter-value" [from]="0" [duration]="1"></span>
+                              <span class="text-success ms-1 fs-13">49%</span>
+                             
+                          </h5>
+                          <p class="text-muted mb-0">Avg. Session</p>
+                      </div>
+                  </div><!--end col-->
+                  <div class="col-6 col-sm-4">
+                      <div class="p-3 border border-dashed border-start-0">
+                          <h5 class="mb-1"><span [CountTo]="1278" class="counter-value" [from]="0" [duration]="1"></span>
+                              <span class="text-success ms-1 fs-13">60%<i class="ri-arrow-right-up-line ms-1 align-middle"></i></span>
+                          </h5>
+                          <p class="text-muted mb-0">Conversion Rate</p>
+                      </div>
+                  </div><!--end col-->
+                  <div class="col-6 col-sm-4">
+                      <div class="p-3 border border-dashed border-start-0 border-end-0">
+                          <h5 class="mb-1"><span [CountTo]="3" class="counter-value" [from]="0" [duration]="1"></span>m <span [CountTo]="40" class="counter-value" [from]="0" [duration]="1"></span>sec
+                          </h5>
+                          <p class="text-muted mb-0">Avg. Ses. Duration</p>
+                      </div>
+                  </div><!--end col-->
+              </div>
           </div><!-- end card header -->
 
           <div class="card-body p-0 pb-2">
@@ -692,7 +693,7 @@
               <h4 class="card-title mb-0 flex-grow-1">My Portfolio</h4>
               <div>
                   <div class="dropdown" ngbDropdown>
-                      <button class="btn btn-soft-primary btn-sm" href="javascript:void(0);" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>
+                      <button class="btn btn-soft-primary btn-sm arrow-none" href="javascript:void(0);" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>
                           <span class="text-uppercase">Btc<i class="mdi mdi-chevron-down align-middle ms-1"></i></span>
                       </button>
                       <div class="dropdown-menu dropdown-menu-end" ngbDropdownMenu>
@@ -822,7 +823,7 @@
                       </div><!-- end -->
                       <div class="d-flex">
                           <div class="flex-grow-1">
-                              <p class="text-truncate text-muted fs-14 mb-0"><i class="mdi mdi-circle align-middle text-danger me-2"></i>Other</p>
+                              <p class="text-truncate text-muted fs-14 mb-0"><i class="mdi mdi-circle align-middle text-secondary me-2"></i>Other</p>
                           </div>
                           <div class="flex-shrink-0">
                               <p class="mb-0">17.58%</p>

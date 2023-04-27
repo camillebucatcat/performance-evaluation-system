@@ -95,7 +95,7 @@ import { ChartOptions } from './sellers.model';
         show: false,
     },
   },
-  colors: ["#0AB39C"]
+  colors: ["#6ada7d"]
 };
 
 /**
@@ -193,7 +193,7 @@ import { ChartOptions } from './sellers.model';
         show: false,
     },
   },
-  colors: ["#0AB39C"]
+  colors: ["#6ada7d"]
 };
 
 /**
@@ -291,7 +291,7 @@ import { ChartOptions } from './sellers.model';
         show: false,
     },
   },
-  colors: ["#0AB39C"]
+  colors: ["#6ada7d"]
 };
 
 /**

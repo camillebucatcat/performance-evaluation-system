@@ -1,3 +1,6 @@
+import { ChartOptions } from './crm.model';
+
+
 /**
  * Stat Counder Data
  */
@@ -28,7 +31,6 @@
     profit: 'down'
   }
 ];
-
 
 /**
  * Deals Status

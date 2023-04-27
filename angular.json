@@ -35,8 +35,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/scss/config/saas/bootstrap.scss",
-              "src/assets/scss/config/saas/app.scss",
+              "src/assets/scss/config/modern/bootstrap.scss",
+              "src/assets/scss/config/modern/app.scss",
               "src/assets/scss/icons.scss",
               "node_modules/shepherd.js/dist/css/shepherd.css"
             ],

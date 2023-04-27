@@ -66,7 +66,7 @@
                         <div class="col-lg-6">
                             <div>
                                 <label for="dateofBirth" class="form-label">Date of Birth</label>
-                                <input type="text" class="form-control" id="dateofBirth" data-provider="flatpickr" placeholder="Enter your date of birth">
+                                <input class="form-control flatpickr-input" type="text" mwlFlatpickr [altInput]="true" [convertModelValue]="true" placeholder="Enter your date of birth">
                             </div>
                         </div><!--end col-->
                         <div class="col-lg-4">
@@ -220,12 +220,12 @@
                   <ng-template ngbNavContent>
                     <div class="row text-center justify-content-center">
                       <div class="col-lg-11">
-                        <div class="mb-4">
+                          <div class="mb-4">
                             <lord-icon src="https://cdn.lordicon.com/lupuorrc.json"
-                                trigger="loop"
-                                colors="primary:#0ab39c,secondary:#405189"
-                                style="width:120px;height:120px"></lord-icon>
-                        </div>
+                            trigger="loop"
+                            colors="primary:#0ab39c,secondary:#405189"
+                            style="width:120px;height:120px"></lord-icon>
+                          </div>
                           <h5>Verification Completed</h5>
                           <p class="text-muted mb-4">To stay verified, don't remove the meta tag form your site's home page. To avoid losing verification, you may want to add multiple methods form the <span class="fw-medium">Crypto > KYC Application.</span></p>
 

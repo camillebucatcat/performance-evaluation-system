@@ -421,7 +421,6 @@ export class WidgetsComponent implements OnInit {
     };
   }
 
-
   // Chat Data Fetch
   private _fetchData() {
     this.tileBoxs1 = tileBoxs1;

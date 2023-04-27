@@ -15,7 +15,7 @@ export class HorizontalComponent implements OnInit {
 
   ngOnInit(): void {
     document.documentElement.setAttribute('data-layout', 'horizontal');
-    document.documentElement.setAttribute('data-topbar', 'dark');
+    document.documentElement.setAttribute('data-topbar', 'light');
     document.documentElement.setAttribute('data-sidebar', 'dark');
     document.documentElement.setAttribute('data-sidebar-size', 'lg');
     document.documentElement.setAttribute('data-layout-style', 'default');

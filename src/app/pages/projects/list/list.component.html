@@ -67,7 +67,7 @@
                           </div>
                       </div>
                       <div class="flex-grow-1">
-                          <h5 class="mb-1 fs-14"><a routerLink="/projects/overview" class="text-dark">{{data.label}}</a></h5>
+                          <h5 class="mb-1 fs-16"><a routerLink="/projects/overview" class="text-dark">{{data.label}}</a></h5>
                           <p class="text-muted text-truncate-two-lines mb-3">{{data.caption}}</p>
                       </div>
                   </div>
@@ -93,14 +93,14 @@
                   <div class="flex-grow-1">
                       <div class="avatar-group">
                         <div class="avatar-group-item" *ngFor="let user of data.users">
-                          <a href="javascript: void(0);" class="d-block" ngbTooltip="{{user.name}}" placement="top" *ngIf="!user.profile">
+                          <a href="javascript:void(0);" class="d-block" ngbTooltip="{{user.name}}" placement="top" *ngIf="!user.profile">
                             <div class="avatar-xxs">
                                 <span class="avatar-title rounded-circle {{user.variant}}">
                                     {{user.text}}
                                 </span>
                             </div>
                           </a>
-                          <a href="javascript: void(0);" class="d-block" ngbTooltip="{{user.name}}" placement="top" *ngIf="user.profile">
+                          <a href="javascript:void(0);" class="d-block" ngbTooltip="{{user.name}}" placement="top" *ngIf="user.profile">
                               <img :src="{{user.profile}}" alt="" class="rounded-circle avatar-xxs">
                           </a>
                         </div>
@@ -130,7 +130,7 @@
               <div class="p-3 mt-n3 mx-n3 bg-soft-{{data.bg_color}} rounded-top">
                   <div class="d-flex align-items-center">
                       <div class="flex-grow-1">
-                          <h5 class="mb-0 fs-14"><a routerLink="/projects/overview" class="text-dark">{{data.label}}</a></h5>
+                          <h5 class="mb-0 fs-15"><a routerLink="/projects/overview" class="text-dark">{{data.label}}</a></h5>
                       </div>
                       <div class="flex-shrink-0">
                           <div class="d-flex gap-1 align-items-center my-n2">
@@ -167,7 +167,7 @@
                       <div class="col-6">
                           <div>
                               <p class="text-muted mb-1">Deadline</p>
-                              <h5 class="fs-13">{{data.deadline}}</h5>
+                              <h5 class="fs-14">{{data.deadline}}</h5>
                           </div>
                       </div>
                   </div>
@@ -176,14 +176,14 @@
                       <p class="text-muted mb-0 me-2">Team :</p>
                       <div class="avatar-group">
                         <div class="avatar-group-item" *ngFor="let user of data.users">
-                          <a href="javascript: void(0);" class="d-block" ngbTooltip="{{user.name}}" placement="top" *ngIf="!user.profile">
+                          <a href="javascript:void(0);" class="d-block" ngbTooltip="{{user.name}}" placement="top" *ngIf="!user.profile">
                             <div class="avatar-xxs">
                                 <span class="avatar-title rounded-circle {{user.variant}}">
                                     {{user.text}}
                                 </span>
                             </div>
                           </a>
-                          <a href="javascript: void(0);" class="d-block" ngbTooltip="{{user.name}}" placement="top" *ngIf="user.profile">
+                          <a href="javascript:void(0);" class="d-block" ngbTooltip="{{user.name}}" placement="top" *ngIf="user.profile">
                               <img :src="{{user.profile}}" alt="" class="rounded-circle avatar-xxs">
                           </a>
                         </div>
@@ -199,7 +199,7 @@
                           <div>{{data.progressBar}}%</div>
                       </div>
                   </div>
-                  <ngb-progressbar [value]="data.progressBar" type="success" class="progress-sm"></ngb-progressbar>
+                  <ngb-progressbar [value]="data.progressBar" type="secondary" class="progress-sm"></ngb-progressbar>
               </div>
 
           </div>
@@ -252,7 +252,7 @@
                       <div class="col-6">
                           <div>
                               <p class="text-muted mb-1">Deadline</p>
-                              <h5 class="fs-13">{{data.deadline}}</h5>
+                              <h5 class="fs-14">{{data.deadline}}</h5>
                           </div>
                       </div>
                   </div>
@@ -261,14 +261,14 @@
                       <p class="text-muted mb-0 me-2">Team :</p>
                       <div class="avatar-group">
                         <div class="avatar-group-item" *ngFor="let user of data.users">
-                          <a href="javascript: void(0);" class="d-block" ngbTooltip="{{user.name}}" placement="top" *ngIf="!user.profile">
+                          <a href="javascript:void(0);" class="d-block" ngbTooltip="{{user.name}}" placement="top" *ngIf="!user.profile">
                             <div class="avatar-xxs">
                                 <span class="avatar-title rounded-circle {{user.variant}}">
                                     {{user.text}}
                                 </span>
                             </div>
                           </a>
-                          <a href="javascript: void(0);" class="d-block" ngbTooltip="{{user.name}}" placement="top" *ngIf="user.profile">
+                          <a href="javascript:void(0);" class="d-block" ngbTooltip="{{user.name}}" placement="top" *ngIf="user.profile">
                               <img :src="{{user.profile}}" alt="" class="rounded-circle avatar-xxs">
                           </a>
                         </div>
@@ -284,7 +284,7 @@
                           <div><i class="ri-list-check align-bottom me-1 text-muted"></i> {{data.number}}</div>
                       </div>
                   </div>
-                  <ngb-progressbar [value]="data.progressBar" type="success" class="progress-sm"></ngb-progressbar>
+                  <ngb-progressbar [value]="data.progressBar" type="primary" class="progress-sm"></ngb-progressbar>
               </div>
 
           </div>

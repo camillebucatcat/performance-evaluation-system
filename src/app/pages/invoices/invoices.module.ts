@@ -7,12 +7,12 @@ import { NgbPaginationModule, NgbTypeaheadModule, NgbDropdownModule } from '@ng-
 // Counter
 import { CountToModule } from 'angular-count-to';
 
+// Flat Picker
+import { FlatpickrModule } from 'angularx-flatpickr';
+
 // Feather Icon
 import { FeatherModule } from 'angular-feather';
 import { allIcons } from 'angular-feather/icons';
-
-// Flat Picker
-import { FlatpickrModule } from 'angularx-flatpickr';
 
 // Component pages
 import { InvoicesRoutingModule } from './invoices-routing.module';
@@ -34,8 +34,8 @@ import { CreateComponent } from './create/create.component';
     NgbTypeaheadModule,
     NgbDropdownModule,
     CountToModule,
-    FeatherModule.pick(allIcons),
     FlatpickrModule,
+    FeatherModule.pick(allIcons),
     InvoicesRoutingModule,
     SharedModule
   ]

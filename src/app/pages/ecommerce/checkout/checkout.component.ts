@@ -45,7 +45,7 @@ export class CheckoutComponent implements OnInit {
       cancelButtonText: 'Close'
     }).then(result => {
       if (result.value) {
-        Swal.fire('Deleted!', 'Checkout has been deleted.', 'success');
+        Swal.fire('Deleted!', 'Address has been deleted.', 'success');
       }
     });
   }

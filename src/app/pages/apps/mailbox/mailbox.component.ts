@@ -34,35 +34,36 @@ export class MailboxComponent implements OnInit {
      */
      this.fetchData();
 
-     // Compose Model Hide/Show
-     var isShowMenu = false;
-        document.querySelectorAll(".email-menu-btn").forEach(function (item) {
-            item.addEventListener("click", function (e) {
-                e.preventDefault();
-                    isShowMenu = true;
-                document.getElementById('menusidebar')?.classList.add("menubar-show");
-            });
+      // Compose Model Hide/Show
+    var isShowMenu = false;
+    document.querySelectorAll(".email-menu-btn").forEach(function (item) {
+        item.addEventListener("click", function (e) {
+            e.preventDefault();
+                isShowMenu = true;
+            document.getElementById('menusidebar')?.classList.add("menubar-show");
         });
-        document.querySelector('.email-wrapper')?.addEventListener('click', function () {
-            if (document.querySelector(".email-menu-sidebar")?.classList.contains('menubar-show')) {
-                if (!isShowMenu) {
-                    document.querySelector(".email-menu-sidebar")?.classList.remove("menubar-show");
-                }
-                isShowMenu = false;
+    });
+    document.querySelector('.email-wrapper')?.addEventListener('click', function () {
+        if (document.querySelector(".email-menu-sidebar")?.classList.contains('menubar-show')) {
+            if (!isShowMenu) {
+                document.querySelector(".email-menu-sidebar")?.classList.remove("menubar-show");
             }
-        });
+            isShowMenu = false;
+        }
+    });
+
   }
 
   /**
    * Fetches the data
    */
    private fetchData() {
-    document.getElementById('emaildata')?.classList.add('d-none')
-    setTimeout(() => {
-     document.getElementById('emaildata')?.classList.remove('d-none')
-     this.emailData = emailData;
-     document.getElementById('mailLoader')?.classList.add('d-none')
-   },1000);
+     document.getElementById('mail-list')?.classList.add('d-none')
+     setTimeout(() => {
+      document.getElementById('mail-list')?.classList.remove('d-none')
+      this.emailData = emailData;
+      document.getElementById('mailLoader')?.classList.add('d-none')
+    },1000);
   }
 
    /**

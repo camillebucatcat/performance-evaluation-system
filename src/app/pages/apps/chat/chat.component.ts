@@ -27,9 +27,10 @@ export class ChatComponent implements OnInit {
   isStatus: string = 'online';
   isProfile: string = 'assets/images/users/avatar-2.jpg';
   username: any = 'Lisa Parker';
-  images: { src: string; thumb: string; caption: string }[] = [];
   @ViewChild('scrollRef') scrollRef:any;
-  
+
+  images: { src: string; thumb: string; caption: string }[] = [];
+
   constructor(public formBuilder: FormBuilder, private lightbox: Lightbox) { 
     for (let i = 1; i <= 24; i++) {
       const src = '../../../../assets/images/small/img-' + i + '.jpg';
@@ -161,11 +162,5 @@ export class ChatComponent implements OnInit {
     // open lightbox
     this.lightbox.open(this.images, index, { });
   }
-
-  close(): void {
-    // close lightbox programmatically
-    this.lightbox.close();
-  }
-  
 
 }

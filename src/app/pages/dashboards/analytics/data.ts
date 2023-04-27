@@ -1,6 +1,6 @@
 import { ChartOptions } from './analytics.model';
 
-// Default Function
+
 
 /**
  * Stat Counder Data

@@ -14,7 +14,7 @@
                   </div>
                   <div>
                       <label>Product Description</label>
-                      <ckeditor [editor]="Editor" data="
+                      <ckeditor [editor]="Editor" data="">
                         <p>Tommy Hilfiger men striped pink sweatshirt. Crafted with cotton. Material composition is 100% organic cotton. This is one of the world’s leading designer lifestyle brands and is internationally recognized for celebrating the essence of classic American cool style, featuring preppy with a twist designs.</p>
                         <ul>
                           <li>Full Sleeve</li>
@@ -22,7 +22,7 @@
                           <li>All Sizes available</li>
                           <li>4 Different Color</li>
                         </ul>
-                        ">
+                       
                       </ckeditor>
                   </div>
               </div>
@@ -35,12 +35,12 @@
               </div>
               <div class="card-body">
                   <div class="mb-4">
-                      <h5 class="fs-13 mb-1">Product Image</h5>
+                      <h5 class="fs-15 mb-1">Product Image</h5>
                       <p class="text-muted">Add Product main Image.</p>
                       <input class="form-control" id="product-image-input" type="file" accept="image/png, image/gif, image/jpeg">
                   </div>
                   <div>
-                      <h5 class="fs-13 mb-1">Product Gallery</h5>
+                      <h5 class="fs-15 mb-1">Product Gallery</h5>
                       <p class="text-muted">Add Product Gallery Images.</p>
                       <dropzone class="dropzone_sec"></dropzone>
                       <!-- end dropzon-preview -->
@@ -205,7 +205,7 @@
               <h5 class="card-title mb-0">Product Categories</h5>
           </div>
           <div class="card-body">
-              <p class="text-muted mb-2"> <a routerLink="/ecommerce/add-product" class="float-end text-decoration-underline">Add New</a>Select product category</p>
+              <p class="text-muted mb-2"> <a href="#" class="float-end text-decoration-underline">Add New</a>Select product category</p>
               <select class="form-select" name="choices-category-input" data-choices data-choices-search-false >
                   <option value="All">All</option>
                   <option value="Appliances">Appliances</option>

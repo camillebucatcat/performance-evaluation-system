@@ -194,4 +194,4 @@ const statData = [{
 ];
   
 
-export {BestSelling, TopSelling, RecentSelling, statData };
+export { BestSelling, TopSelling, RecentSelling, statData };

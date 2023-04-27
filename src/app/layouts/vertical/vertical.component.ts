@@ -15,7 +15,7 @@ export class VerticalComponent implements OnInit {
     document.documentElement.setAttribute('data-layout', 'vertical');
     document.documentElement.setAttribute('data-topbar', 'light');
     document.documentElement.setAttribute('data-sidebar', 'dark');
-    document.documentElement.setAttribute('data-sidebar-size', 'lg');
+    document.documentElement.setAttribute('data-sidebar-size', 'sm-hover');
     document.documentElement.setAttribute('data-layout-style', 'default');
     document.documentElement.setAttribute('data-layout-mode', 'light');
     document.documentElement.setAttribute('data-layout-width', 'fluid');
@@ -28,7 +28,7 @@ export class VerticalComponent implements OnInit {
         document.documentElement.setAttribute('data-sidebar-size', 'sm');
       }
       else if (window.screen.width >= 1024) {      
-        document.documentElement.setAttribute('data-sidebar-size', 'lg');
+        document.documentElement.setAttribute('data-sidebar-size', 'sm-hover');
       }
     })
   }

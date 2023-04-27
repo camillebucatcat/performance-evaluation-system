@@ -36,7 +36,7 @@ import { ChartOptions } from './wallet.model';
         stops: [50, 100, 100, 100],
     },
   },
-  colors: ["#0ab39c"]
+  colors: ["#6ada7d"]
 };
 
 /**
@@ -75,7 +75,7 @@ import { ChartOptions } from './wallet.model';
           stops: [50, 100, 100, 100],
       },
   },
-  colors: ["#0ab39c"]
+  colors: ["#6ada7d"]
 };
 
 /**
@@ -114,7 +114,7 @@ import { ChartOptions } from './wallet.model';
           stops: [50, 100, 100, 100],
       },
   },
-  colors: ["#0ab39c"]
+  colors: ["#6ada7d"]
 };
 
 /**
@@ -192,7 +192,7 @@ import { ChartOptions } from './wallet.model';
           stops: [50, 100, 100, 100],
       },
   },
-  colors: ["#0ab39c"]
+  colors: ["#6ada7d"]
 };
 
 /**
@@ -231,7 +231,7 @@ import { ChartOptions } from './wallet.model';
           stops: [50, 100, 100, 100],
       },
   },
-  colors: ["#0ab39c"]
+  colors: ["#6ada7d"]
 };
 
 /**

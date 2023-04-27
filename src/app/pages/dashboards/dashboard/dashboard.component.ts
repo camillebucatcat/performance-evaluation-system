@@ -47,7 +47,7 @@ export class DashboardComponent implements OnInit {
       this.fetchData();
 
     // Chart Color Data Get Function
-    this._analyticsChart('["--vz-success", "--vz-info", "--vz-danger"]');
+    this._analyticsChart('["--vz-warning", "--vz-primary", "--vz-success"]');
     this._SalesCategoryChart('["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]');
   }
 
@@ -75,6 +75,7 @@ export class DashboardComponent implements OnInit {
         }
     });
   }
+
 
   /**
  * Sales Analytics Chart
@@ -188,7 +189,7 @@ export class DashboardComponent implements OnInit {
   /**
  *  Sales Category
  */
-   private _SalesCategoryChart(colors:any) {
+  private _SalesCategoryChart(colors:any) {
     colors = this.getChartColorsArray(colors);
     this.SalesCategoryChart = {
       series: [44, 55, 41, 17, 15],
@@ -252,7 +253,7 @@ export class DashboardComponent implements OnInit {
     slidesPerView: 2,
     pagination: true,
   };
-  
+
   /**
    * Recent Activity
    */

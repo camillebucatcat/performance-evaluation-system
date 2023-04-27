@@ -40,7 +40,7 @@ export class ProjectsComponent implements OnInit {
      */
      this.fetchData();
 
-    // Chart Color Data Get Function
+     // Chart Color Data Get Function
     this._OverviewChart('["--vz-primary", "--vz-warning", "--vz-success"]');
     this._status7('["--vz-success", "--vz-primary", "--vz-warning", "--vz-danger"]');
 
@@ -50,8 +50,8 @@ export class ProjectsComponent implements OnInit {
     this.scrollRef.SimpleBar.getScrollElement().scrollTop = 600;
   }
 
-  // Chart Colors Set
-  private getChartColorsArray(colors:any) {
+   // Chart Colors Set
+   private getChartColorsArray(colors:any) {
     colors = JSON.parse(colors);
     return colors.map(function (value:any) {
       var newValue = value.replace(" ", "");
@@ -75,10 +75,11 @@ export class ProjectsComponent implements OnInit {
     });
   }
 
+
   /**
  * Projects Overview
  */
-  private _OverviewChart(colors:any) {
+   private _OverviewChart(colors:any) {
     colors = this.getChartColorsArray(colors);
     this.OverviewChart = {
       series: [{
@@ -197,43 +198,43 @@ export class ProjectsComponent implements OnInit {
     };
   }
 
-  /**
+   /**
  *  Status7
  */
-  private _status7(colors:any) {
-    colors = this.getChartColorsArray(colors);
-    this.status7 = {
-      series: [125, 42, 58, 89],
-      labels: ["Completed", "In Progress", "Yet to Start", "Cancelled"],
-      chart: {
-          type: "donut",
-          height: 230,
-      },
-      plotOptions: {
-          pie: {
-              offsetX: 0,
-              offsetY: 0,
-              donut: {
-                  size: "90%",
-                  labels: {
-                      show: false,
-                  }
-              },
-          },
-      },
-      dataLabels: {
-          enabled: false,
-      },
-      legend: {
-          show: false,
-      },
-      stroke: {
-          lineCap: "round",
-          width: 0
-      },
-      colors: colors
-    };
-  }
+    private _status7(colors:any) {
+      colors = this.getChartColorsArray(colors);
+      this.status7 = {
+        series: [125, 42, 58, 89],
+        labels: ["Completed", "In Progress", "Yet to Start", "Cancelled"],
+        chart: {
+            type: "donut",
+            height: 230,
+        },
+        plotOptions: {
+            pie: {
+                offsetX: 0,
+                offsetY: 0,
+                donut: {
+                    size: "90%",
+                    labels: {
+                        show: false,
+                    }
+                },
+            },
+        },
+        dataLabels: {
+            enabled: false,
+        },
+        legend: {
+            show: false,
+        },
+        stroke: {
+            lineCap: "round",
+            width: 0
+        },
+        colors: colors
+      };
+    }
 
   /**
    * Fetches the data

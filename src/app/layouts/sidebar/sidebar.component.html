@@ -20,7 +20,7 @@
               <img src="assets/images/logo-light.png" alt="" height="17">
           </span>
       </a>
-      <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+      <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover" (click)="toggleMobileMenu($event)">
           <i class="ri-record-circle-line"></i>
       </button>
   </div>
@@ -46,7 +46,7 @@
                 </a>
 
                 <a [routerLink]="item.link" *ngIf="!hasItems(item)" class="side-nav-link-ref nav-link menu-link" routerLinkActive="active">
-                  <i class="bx {{ item.icon }} icon nav-icon" *ngIf="item.icon" class=""></i>
+                  <i class="{{ item.icon }} icon nav-icon" *ngIf="item.icon" class=""></i>
                   <span class=""> {{ item.label | translate }}</span>
                   <span class="badge {{item.badge.variant}} float-end" *ngIf="item.badge">{{item.badge.text |
                     translate}}</span>
@@ -62,7 +62,6 @@
                         <span class="badge badge-pill {{subitem.badge.variant}}" *ngIf="subitem.badge">{{subitem.badge.text
                           | translate}}</span>
                       </a>
-
                       <a *ngIf="hasItems(subitem)" class="nav-link" href="javascript:void(0);"
                         [attr.data-parent]="subitem.parentId" data-bs-toggle="collapse" aria-expanded="false" (click)="toggleSubItem($event)">
                         {{ subitem.label | translate}}
@@ -74,9 +73,9 @@
                         <ul *ngIf="hasItems(subitem)" class="nav nav-sm flex-column" aria-expanded="false">
                           <li *ngFor="let subSubitem of subitem.subItems" class="nav-item">
 
-                            <a [routerLink]="subSubitem.link" *ngIf="!hasItems(subSubitem)" class="nav-link"
-                              [attr.data-parent]="subSubitem.parentId" routerLinkActive="active" (click)="updateActive($event)">
-                              {{ subSubitem.label | translate}}
+                            <a [attr.data-parent]="subSubitem.parentId" [routerLink]="subSubitem.link" routerLinkActive="active"
+                            class="nav-link" (click)="updateActive($event)" *ngIf="!hasItems(subSubitem)">
+                              {{ subSubitem.label | translate }}
                             </a>
 
                             <a *ngIf="hasItems(subSubitem)" class="nav-link" href="javascript:void(0);"
@@ -102,7 +101,6 @@
                           </li>
                         </ul>
                       </div>
-                      
                     </li>
                   </ul>
                 </div>
@@ -113,6 +111,7 @@
       </div>
       <!-- Sidebar -->
   </div>
+  <div class="sidebar-background"></div>
 </div>
 <!-- Left Sidebar End -->
 <!-- Vertical Overlay-->

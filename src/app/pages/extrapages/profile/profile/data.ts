@@ -75,7 +75,7 @@ const projectList = [
         img:'assets/images/users/avatar-5.jpg'
       }
     ],
-    cardBorderColor:"primary",
+    cardBorderColor:"info",
   },
   {
     title: "Brand Logo Design",
@@ -97,7 +97,7 @@ const projectList = [
     cardBorderColor:"danger",
   },
   {
-    title: "Chat App",
+    title: "Brand Logo Design",
     updatedTime:"10 min Ago",
     badgeText :"New",
     badgeClass:"info",
@@ -113,7 +113,7 @@ const projectList = [
         variant: 'bg-light text-primary'
       }
     ],
-    cardBorderColor:"primary",
+    cardBorderColor:"danger",
   },
   {
     title: "Project Update",

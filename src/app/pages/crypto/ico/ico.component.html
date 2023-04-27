@@ -8,7 +8,7 @@
           <div class="card-body d-flex">
               <div class="flex-grow-1">
                   <h4>4751</h4>
-                  <h6 class="text-muted fs-13 mb-0">ICOs Published</h6>
+                  <h6 class="text-muted mb-0">ICOs Published</h6>
               </div>
               <div class="flex-shrink-0 avatar-sm">
                   <div class="avatar-title bg-soft-warning text-warning fs-22 rounded">
@@ -23,7 +23,7 @@
           <div class="card-body d-flex">
               <div class="flex-grow-1">
                   <h4>3423</h4>
-                  <h6 class="text-muted fs-13 mb-0">Active ICOs</h6>
+                  <h6 class="text-muted mb-0">Active ICOs</h6>
               </div>
               <div class="flex-shrink-0 avatar-sm">
                   <div class="avatar-title bg-soft-success text-success fs-22 rounded">
@@ -38,7 +38,7 @@
           <div class="card-body d-flex">
               <div class="flex-grow-1">
                   <h4>354</h4>
-                  <h6 class="text-muted fs-13 mb-0">ICOs Trading</h6>
+                  <h6 class="text-muted mb-0">ICOs Trading</h6>
               </div>
               <div class="flex-shrink-0 avatar-sm">
                   <div class="avatar-title bg-soft-info text-info fs-22 rounded">
@@ -53,7 +53,7 @@
           <div class="card-body d-flex">
               <div class="flex-grow-1">
                   <h4>2762</h4>
-                  <h6 class="text-muted fs-13 mb-0">Funded ICOs</h6>
+                  <h6 class="text-muted mb-0">Funded ICOs</h6>
               </div>
               <div class="flex-shrink-0 avatar-sm">
                   <div class="avatar-title bg-soft-danger text-danger fs-22 rounded">
@@ -68,7 +68,7 @@
           <div class="card-body d-flex">
               <div class="flex-grow-1">
                   <h4>1585</h4>
-                  <h6 class="text-muted fs-13 mb-0">Upcoming ICO</h6>
+                  <h6 class="text-muted mb-0">Upcoming ICO</h6>
               </div>
               <div class="flex-shrink-0 avatar-sm">
                   <div class="avatar-title bg-soft-primary text-primary fs-22 rounded">
@@ -90,7 +90,7 @@
               </div>
           </div><!--end col-->
           <div class="col-xxl-3 col-lg-6">
-            <input class="form-control flatpickr-input" type="text" mwlFlatpickr [altInput]="true" [convertModelValue]="true" placeholder="Select date">
+            <input class="form-control flatpickr-input" type="text" mwlFlatpickr [altInput]="true" [convertModelValue]="true" placeholder="Select date" >
           </div>
           <div class="col-xxl-2 col-lg-4">
               <select class="form-control" data-choices data-choices-search-false name="choices-single-default2"
@@ -122,7 +122,7 @@
   <div class="col-xxl-3 col-md-6">
       <div class="card overflow-hidden">
           <div class="card-body bg-soft-success">
-              <h5 class="fs-15 text-center mb-0">Active ICOs</h5>
+              <h5 class="fs-17 text-center mb-0">Active ICOs</h5>
           </div>
       </div>
       <div *ngFor="let data of chatMessagesData">
@@ -159,7 +159,7 @@
   <div class="col-xxl-3 col-md-6">
       <div class="card overflow-hidden">
           <div class="card-body bg-soft-danger">
-              <h5 class="fs-15 text-center mb-0">Ended ICOs</h5>
+              <h5 class="fs-17 text-center mb-0">Ended ICOs</h5>
           </div>
       </div>
       <div *ngFor="let data of chatMessagesData">
@@ -172,7 +172,7 @@
                   </div>
               </div>
               <div class="flex-grow-1 ms-3">
-                  <h5 class="fs-14 mb-1">{{data.label}}</h5>
+                  <h5 class="fs-16 mb-1">{{data.label}}</h5>
                   <p class="text-muted mb-2">{{data.caption}}</p>
               </div>
               <div>
@@ -196,7 +196,7 @@
   <div class="col-xxl-3 col-md-6">
       <div class="card overflow-hidden">
           <div class="card-body bg-soft-primary">
-              <h5 class="fs-15 text-center mb-0">Upcoming ICOs</h5>
+              <h5 class="fs-17 text-center mb-0">Upcoming ICOs</h5>
           </div>
       </div>
       <div *ngFor="let data of chatMessagesData">
@@ -209,7 +209,7 @@
                   </div>
               </div>
               <div class="flex-grow-1 ms-3">
-                  <h5 class="fs-14 mb-1">{{data.label}}</h5>
+                  <h5 class="fs-16 mb-1">{{data.label}}</h5>
                   <p class="text-muted mb-2">{{data.caption}}</p>
               </div>
               <div>
@@ -234,7 +234,7 @@
   <div class="col-xxl-3 col-md-6">
       <div class="card overflow-hidden">
           <div class="card-body bg-soft-info">
-              <h5 class="fs-15 text-center mb-0">Trading ICOs</h5>
+              <h5 class="fs-17 text-center mb-0">Trading ICOs</h5>
           </div>
       </div>
       <div *ngFor="let data of chatMessagesData">
@@ -248,7 +248,7 @@
                       </div>
                   </div>
                   <div class="flex-grow-1 ms-3">
-                      <h5 class="fs-14 mb-1">{{data.label}}</h5>
+                      <h5 class="fs-16 mb-1">{{data.label}}</h5>
                       <p class="text-muted mb-2">{{data.caption}}</p>
                   </div>
                   <div class="me-4">

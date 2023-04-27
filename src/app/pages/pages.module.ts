@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { FlatpickrModule } from 'angularx-flatpickr';
@@ -14,10 +14,6 @@ import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 
 import { LightboxModule } from 'ngx-lightbox';
-
-// Load Icons
-import { defineLordIconElement } from 'lord-icon-element';
-import lottie from 'lottie-web';
 
 // Pages Routing
 import { PagesRoutingModule } from "./pages-routing.module";
@@ -59,11 +55,6 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
       provide: SWIPER_CONFIG,
       useValue: DEFAULT_SWIPER_CONFIG
     }
-  ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  ]
 })
-export class PagesModule {
-  constructor() {
-    defineLordIconElement(lottie.loadAnimation);
-  }
- }
+export class PagesModule { }

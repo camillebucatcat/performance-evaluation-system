@@ -14,7 +14,8 @@
                   <div class="row g-4 mb-3">
                       <div class="col-sm-auto">
                           <div>
-                              <button type="button" class="btn btn-success add-btn" data-bs-toggle="modal" id="create-btn" data-bs-target="#showModal" (click)="openModal(content)"><i class="ri-add-line align-bottom me-1"></i> Add</button>
+                              <button type="button" class="btn btn-success add-btn me-1" data-bs-toggle="modal" id="create-btn" data-bs-target="#showModal" (click)="openModal(content)"><i class="ri-add-line align-bottom me-1"></i> Add</button>
+                              <button class="btn btn-soft-danger"><i class="ri-delete-bin-2-line"></i></button>
                           </div>
                       </div>
                       <div class="col-sm">
@@ -48,7 +49,7 @@
                         <tr *ngFor="let data of ListJsList$ | async">
                           <th scope="row">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="checkAll" value="option1" [(ngModel)]="data.isSelected">
+                                <input class="form-check-input" type="checkbox" name="chk_child" value="option1" [(ngModel)]="data.isSelected">
                             </div>
                           </th>
                           <td><ngb-highlight [result]="data.customer_name" [term]="service.searchTerm"></ngb-highlight></td>
@@ -74,7 +75,7 @@
                   </div>
 
                   <div class="row justify-content-md-between align-items-md-center">
-                    <div class="col-sm-12 col-md-5">
+                    <div class="col col-sm-6">
                         <div class="dataTables_info mb-2" id="tickets-table_info" role="status" aria-live="polite">
                             Showing
                             {{service.startIndex}} to
@@ -83,8 +84,8 @@
                         </div>
                     </div>
                     <!-- Pagination -->
-                    <div class="col-sm-12 col-md-5">
-                        <div class="text-md-right float-md-end listjs-pagination">
+                    <div class="col col-sm-6">
+                        <div class="text-sm-right float-end listjs-pagination">
                           <ngb-pagination
                           [collectionSize]="(total$ | async)!" [(page)]="service.page" [pageSize]="service.pageSize">
                         </ngb-pagination>

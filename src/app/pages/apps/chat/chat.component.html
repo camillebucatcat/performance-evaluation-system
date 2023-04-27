@@ -26,7 +26,7 @@
 
             <div class="d-flex align-items-center px-4 mb-2">
                 <div class="flex-grow-1">
-                    <h4 class="mb-0 fs-11 text-muted text-uppercase">Direct Messages</h4>
+                    <h4 class="mb-0 fs-12 text-muted text-uppercase">Direct Messages</h4>
                 </div>
                 <div class="flex-shrink-0">
                     <div data-bs-toggle="tooltip" data-bs-trigger="hover" ngbTooltip="New Message" placement="bottom">
@@ -65,7 +65,7 @@
 
             <div class="d-flex align-items-center px-4 mt-4 pt-2 mb-2">
                 <div class="flex-grow-1">
-                    <h4 class="mb-0 fs-11 text-muted text-uppercase">Channels</h4>
+                    <h4 class="mb-0 fs-12 text-muted text-uppercase">Channels</h4>
                 </div>
                 <div class="flex-shrink-0">
                     <div data-bs-toggle="tooltip" data-bs-trigger="hover" ngbTooltip="Create group" placement="bottom">
@@ -130,7 +130,7 @@
                                             </div>
                                             <div class="flex-grow-1 overflow-hidden">
                                                 <h5 class="text-truncate mb-0 fs-16"><a class="text-reset username" data-bs-toggle="offcanvas" href="javascript:void(0);" aria-controls="userProfileCanvasExample" (click)="onChatInfoClicked()">{{username}}</a></h5>
-                                                <p class="text-truncate text-muted fs-14 mb-0 userStatus"><small>{{ isStatus | titlecase }}</small></p>
+                                                <p class="text-truncate text-muted mb-0 userStatus"><small>{{ isStatus | titlecase }}</small></p>
                                             </div>
                                         </div>
                                     </div>
@@ -181,8 +181,8 @@
                     <!-- end chat user head -->
 
                     <div class="position-relative" id="users-chat">
-                    <ngx-simplebar class="chat-conversation p-3 p-lg-4" #scrollRef>
-                        <ul class="list-unstyled chat-conversation-list" id="users-conversation">
+                    <ngx-simplebar class="chat-conversation p-3 p-lg-4">
+                        <ul class="list-unstyled chat-conversation-list" id="users-conversation" #scrollRef>
                             <li class="chat-list left" *ngFor="let data of chatMessagesData" [ngClass]="{ 'right': data.align === 'right' }">
                                 <div class="conversation-list">
                                     <div class="chat-avatar" *ngIf="data.profile">
@@ -327,7 +327,7 @@
               <p class="text-muted"><i class="ri-checkbox-blank-circle-fill me-1 align-bottom text-success"></i>Online</p>
           </div>
 
-          <div class="d-flex gap-3 justify-content-center">
+          <div class="d-flex gap-2 justify-content-center">
               <button type="button" class="btn avatar-xs p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Message">
                   <span class="avatar-title rounded bg-light text-body">
                       <i class="ri-question-answer-line"></i>
@@ -365,15 +365,15 @@
       <div class="border-top border-top-dashed p-3">
           <h5 class="fs-15 mb-3">Personal Details</h5>
           <div class="mb-3">
-              <p class="text-muted text-uppercase fw-medium fs-12 mb-1">Number</p>
+              <p class="text-muted text-uppercase fw-medium fs-13 mb-1">Number</p>
               <h6>+(256) 2451 8974</h6>
           </div>
           <div class="mb-3">
-              <p class="text-muted text-uppercase fw-medium fs-12 mb-1">Email</p>
+              <p class="text-muted text-uppercase fw-medium fs-13 mb-1">Email</p>
               <h6>lisaparker@gmail.com</h6>
           </div>
           <div>
-              <p class="text-muted text-uppercase fw-medium fs-12 mb-1">Location</p>
+              <p class="text-muted text-uppercase fw-medium fs-13 mb-1">Location</p>
               <h6 class="mb-0">California, USA</h6>
           </div>
       </div>
@@ -423,7 +423,7 @@
                           </div>
                       </div>
                       <div class="flex-grow-1 overflow-hidden">
-                          <h5 class="fs-13 mb-1"><a href="javascript:void(0);" class="text-body text-truncate d-block">Velzon admin.ppt</a></h5>
+                          <h5 class="fs-15 mb-1"><a href="javascript:void(0);" class="text-body text-truncate d-block">Velzon admin.ppt</a></h5>
                           <div class="text-muted">2.4MB</div>
                       </div>
                       <div class="flex-shrink-0 ms-2">
@@ -454,7 +454,7 @@
                           </div>
                       </div>
                       <div class="flex-grow-1 overflow-hidden">
-                          <h5 class="fs-13 mb-1"><a href="javascript:void(0);" class="text-body text-truncate d-block">Images.zip</a></h5>
+                          <h5 class="fs-15 mb-1"><a href="javascript:void(0);" class="text-body text-truncate d-block">Images.zip</a></h5>
                           <div class="text-muted">1.2MB</div>
                       </div>
                       <div class="flex-shrink-0 ms-2">
@@ -485,7 +485,7 @@
                           </div>
                       </div>
                       <div class="flex-grow-1 overflow-hidden">
-                          <h5 class="fs-13 mb-1"><a href="javascript:void(0);" class="text-body text-truncate d-block">bg-pattern.png</a></h5>
+                          <h5 class="fs-15 mb-1"><a href="javascript:void(0);" class="text-body text-truncate d-block">bg-pattern.png</a></h5>
                           <div class="text-muted">1.1MB</div>
                       </div>
                       <div class="flex-shrink-0 ms-2">

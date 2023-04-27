@@ -42,11 +42,10 @@ export class AnalyticsComponent implements OnInit {
 
     // Chart Color Data Get Function
     this._basicBarChart('["--vz-info", "--vz-info", "--vz-info", "--vz-info", "--vz-danger", "--vz-info", "--vz-info", "--vz-info", "--vz-info", "--vz-info"]');
-    this._basicColumnChart('["--vz-success", "--vz-gray-300"]');
-    this._basicHeatmapChart('["--vz-success", "--vz-info"]');
+    this._basicColumnChart('["--vz-primary", "--vz-gray-300"]');
+    this._basicHeatmapChart('["--vz-success", "--vz-secondary"]');
     this._simpleDonutChart('["--vz-primary", "--vz-warning", "--vz-info"]');
   }
-
 
   // Chart Colors Set
   private getChartColorsArray(colors:any) {
@@ -73,7 +72,7 @@ export class AnalyticsComponent implements OnInit {
     });
   }
 
-  /**
+/**
  * Series Data
  */
  private generateData(count: number, yrange: { max: number; min: number; }) {
@@ -143,85 +142,6 @@ export class AnalyticsComponent implements OnInit {
   }
 
   /**
- * Basic Column Charts
- */
-   private _basicColumnChart(colors:any) {
-    colors = this.getChartColorsArray(colors);
-    this.basicColumnChart = {
-      series: [{
-          name: 'Last Year',
-          data: [25.3, 12.5, 20.2, 18.5, 40.4, 25.4, 15.8, 22.3, 19.2, 25.3, 12.5, 20.2]
-      }, {
-          name: 'Current Year',
-          data: [36.2, 22.4, 38.2, 30.5, 26.4, 30.4, 20.2, 29.6, 10.9, 36.2, 22.4, 38.2]
-      }],
-      chart: {
-          type: 'bar',
-          height: 306,
-          stacked: true,
-          toolbar: {
-              show: false,
-          }
-      },
-      plotOptions: {
-          bar: {
-              horizontal: false,
-              columnWidth: '30%',
-              borderRadius: 6,
-          },
-      },
-      dataLabels: {
-          enabled: false,
-      },
-      legend: {
-          show: true,
-          position: 'bottom',
-          horizontalAlign: 'center',
-          fontWeight: 400,
-          fontSize: '8px',
-          offsetX: 0,
-          offsetY: 0,
-          markers: {
-              width: 9,
-              height: 9,
-              radius: 4,
-          },
-      },
-      stroke: {
-          show: true,
-          width: 2,
-          colors: ['transparent']
-      },
-      grid: {
-          show: false,
-      },
-      colors: colors,
-      xaxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        axisTicks: {
-          show: false,
-      },
-      },
-      yaxis: {
-        title: {
-          text: '$ (thousands)'
-        },
-      },
-      fill: {
-        opacity: 1
-
-      },
-      tooltip: {
-        y: {
-          formatter: function (val:any) {
-            return "$ " + val + " thousands"
-          }
-        }
-      }
-    };
-   }
-
-   /**
  * Basic Heatmap Chart
  */
   private _basicHeatmapChart(colors:any) {
@@ -318,59 +238,139 @@ export class AnalyticsComponent implements OnInit {
     };
   }
 
-    /**
+  /**
+ * Basic Column Charts
+ */
+  private _basicColumnChart(colors:any) {
+    colors = this.getChartColorsArray(colors);
+    this.basicColumnChart = {
+      series: [{
+          name: 'Last Year',
+          data: [25.3, 12.5, 20.2, 18.5, 40.4, 25.4, 15.8, 22.3, 19.2, 25.3, 12.5, 20.2]
+      }, {
+          name: 'Current Year',
+          data: [36.2, 22.4, 38.2, 30.5, 26.4, 30.4, 20.2, 29.6, 10.9, 36.2, 22.4, 38.2]
+      }],
+      chart: {
+          type: 'bar',
+          height: 306,
+          stacked: true,
+          toolbar: {
+              show: false,
+          }
+      },
+      plotOptions: {
+          bar: {
+              horizontal: false,
+              columnWidth: '30%',
+              borderRadius: 6,
+          },
+      },
+      dataLabels: {
+          enabled: false,
+      },
+      legend: {
+          show: true,
+          position: 'bottom',
+          horizontalAlign: 'center',
+          fontWeight: 400,
+          fontSize: '8px',
+          offsetX: 0,
+          offsetY: 0,
+          markers: {
+              width: 9,
+              height: 9,
+              radius: 4,
+          },
+      },
+      stroke: {
+          show: true,
+          width: 2,
+          colors: ['transparent']
+      },
+      grid: {
+          show: false,
+      },
+      colors: colors,
+      xaxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        axisTicks: {
+          show: false,
+      },
+      },
+      yaxis: {
+        title: {
+          text: '$ (thousands)'
+        },
+      },
+      fill: {
+        opacity: 1
+
+      },
+      tooltip: {
+        y: {
+          formatter: function (val:any) {
+            return "$ " + val + " thousands"
+          }
+        }
+      }
+    };
+  }
+
+  /**
  * Simple Donut Chart
  */
-    private _simpleDonutChart(colors:any) {
-      colors = this.getChartColorsArray(colors);
-      this.simpleDonutChart = {
-        series: [78.56, 105.02, 42.89],
-        labels: ["Desktop", "Mobile", "Tablet"],
-        chart: {
-            type: "donut",
-            height: 219,
-        },
-        plotOptions: {
-            pie: {
-                donut: {
-                    size: "76%",
-                },
-            },
-        },
-        dataLabels: {
-            enabled: false,
-        },
-        legend: {
-            show: false,
-            position: 'bottom',
-            horizontalAlign: 'center',
-            offsetX: 0,
-            offsetY: 0,
-            markers: {
-                width: 20,
-                height: 6,
-                radius: 2,
-            },
-            itemMargin: {
-                horizontal: 12,
-                vertical: 0
-            },
-        },
-        stroke: {
-            width: 0
-        },
-        yaxis: {
-            labels: {
-                formatter: function (value:any) {
-                    return value + "k" + " Users";
-                }
-            },
-            tickAmount: 4,
-            min: 0
-        },
-        colors: colors
-      };
-    }
+  private _simpleDonutChart(colors:any) {
+    colors = this.getChartColorsArray(colors);
+    this.simpleDonutChart = {
+  series: [78.56, 105.02, 42.89],
+  labels: ["Desktop", "Mobile", "Tablet"],
+  chart: {
+      type: "donut",
+      height: 219,
+  },
+  plotOptions: {
+      pie: {
+          donut: {
+              size: "76%",
+          },
+      },
+  },
+  dataLabels: {
+      enabled: false,
+  },
+  legend: {
+      show: false,
+      position: 'bottom',
+      horizontalAlign: 'center',
+      offsetX: 0,
+      offsetY: 0,
+      markers: {
+          width: 20,
+          height: 6,
+          radius: 2,
+      },
+      itemMargin: {
+          horizontal: 12,
+          vertical: 0
+      },
+  },
+  stroke: {
+      width: 0
+  },
+  yaxis: {
+      labels: {
+          formatter: function (value:any) {
+              return value + "k" + " Users";
+          }
+      },
+      tickAmount: 4,
+      min: 0
+  },
+  colors: colors
+    };
+  }
+
 
   /**
    * Sale Location Map

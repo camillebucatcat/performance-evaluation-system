@@ -82,6 +82,7 @@
                                 <span class="badge badge-pill {{subitem.badge.variant}}" *ngIf="subitem.badge">{{subitem.badge.text
                                   | translate}}</span>
                               </a>
+
                               <a *ngIf="hasItems(subitem)" class="nav-link ecomm" data-bs-toggle="collapse" [attr.aria-expanded]="false" href="javascript:void(0);"
                                 [attr.data-parent]="subitem.parentId" (click)="toggleSubItem($event)">
                                 {{ subitem.label | translate}}
@@ -100,8 +101,8 @@
                                         | translate}}</span>
                                     </a>
 
-                                    <a *ngIf="hasItems(subSubitem)" class="nav-link" href="javascript:void(0);"
-                                      [attr.data-parent]="subSubitem.parentId" data-bs-toggle="collapse" aria-expanded="false" (click)="toggleExtraSubItem($event)">
+                                    <a *ngIf="hasItems(subSubitem)" class="nav-link ecomm" data-bs-toggle="collapse" [attr.aria-expanded]="false" href="javascript:void(0);"
+                                      [attr.data-parent]="subSubitem.parentId" (click)="toggleExtraSubItem($event)">
                                       {{ subSubitem.label | translate}}
                                       <span class="badge badge-pill {{subSubitem.badge.variant}}" *ngIf="subSubitem.badge">{{subSubitem.badge.text
                                         | translate}}</span>
@@ -120,6 +121,7 @@
                                       </ul>
                                     </div>
                                     
+
                                   </li>
                                 </ul>
                               </div>
@@ -138,6 +140,7 @@
       </div>
       <!-- Sidebar -->
   </div>
+  <div class="sidebar-background"></div>
 </div>
 <!-- Left Sidebar End -->
 <!-- Vertical Overlay-->

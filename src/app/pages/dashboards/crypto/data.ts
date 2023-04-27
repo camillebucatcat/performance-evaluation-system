@@ -60,7 +60,7 @@ import { ChartOptions } from './crypto.model';
         stops: [50, 100, 100, 100],
     },
   },
-  colors: ["#0ab39c"]
+  colors: ["#6ada7d"]
 };
 
 /**
@@ -99,7 +99,7 @@ import { ChartOptions } from './crypto.model';
           stops: [50, 100, 100, 100],
       },
   },
-  colors: ["#0ab39c"]
+  colors: ["#6ada7d"]
 };
 
 /**
@@ -138,7 +138,7 @@ import { ChartOptions } from './crypto.model';
           stops: [50, 100, 100, 100],
       },
   },
-  colors: ["#0ab39c"]
+  colors: ["#6ada7d"]
 };
 
 /**
@@ -216,7 +216,7 @@ import { ChartOptions } from './crypto.model';
           stops: [50, 100, 100, 100],
       },
   },
-  colors: ["#0ab39c"]
+  colors: ["#6ada7d"]
 };
 
 /**
@@ -255,7 +255,7 @@ import { ChartOptions } from './crypto.model';
           stops: [50, 100, 100, 100],
       },
   },
-  colors: ["#0ab39c"]
+  colors: ["#6ada7d"]
 };
 
 /**

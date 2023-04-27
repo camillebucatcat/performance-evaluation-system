@@ -43,8 +43,7 @@ export class RightsidebarComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    setTimeout(() => {     
-
+    setTimeout(() => {
       this.attribute = '';
       this.attribute = document.documentElement.getAttribute('data-layout');
       if (this.attribute == 'vertical') {

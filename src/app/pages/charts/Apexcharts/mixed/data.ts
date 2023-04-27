@@ -54,7 +54,7 @@ const lineChart: ChartOptions = {
           },
       }
   }],
-  colors: ["#6691E7", "#13C56B"]
+  colors: ["#5ea3cb", "#6ada7d"]
 };
 
 /**
@@ -105,17 +105,17 @@ const multipleYAxisChart: ChartOptions = {
           },
           axisBorder: {
               show: true,
-              color: '#405189'
+              color: '#5ea3cb'
           },
           labels: {
               style: {
-                  colors: '#405189',
+                  colors: '#5ea3cb',
               }
           },
           title: {
               text: "Income (thousand crores)",
               style: {
-                  color: '#405189',
+                  color: '#5ea3cb',
                   fontWeight: 600
               }
           },
@@ -131,17 +131,17 @@ const multipleYAxisChart: ChartOptions = {
           },
           axisBorder: {
               show: true,
-              color: '#405189'
+              color: '#5ea3cb'
           },
           labels: {
               style: {
-                  colors: '#405189',
+                  colors: '#5ea3cb',
               }
           },
           title: {
               text: "Operating Cashflow (thousand crores)",
               style: {
-                  color: '#405189',
+                  color: '#5ea3cb',
                   fontWeight: 600
               }
           },
@@ -182,7 +182,7 @@ const multipleYAxisChart: ChartOptions = {
       horizontalAlign: 'left',
       offsetX: 40
   },
-  colors: ["#6691E7", "#50C3E6", "#13C56B"]
+  colors: ["#5ea3cb", "#58caea", "#6ada7d"]
 };
 
 /**
@@ -240,7 +240,7 @@ const lineAreaChart: ChartOptions = {
           }
       }
   },
-  colors: ["#6691E7", "#13C56B"]
+  colors: ["#5ea3cb", "#6ada7d"]
 };
 
 /**
@@ -316,7 +316,7 @@ const lineColumnAreaChart: ChartOptions = {
           }
       }
   },
-  colors: ["#6691E7", "#13C56B", "#ED5E5E"]
+  colors: ["#5ea3cb", "#6ada7d", "#f1734f"]
 };
 
 export { lineChart, multipleYAxisChart, lineAreaChart, lineColumnAreaChart }

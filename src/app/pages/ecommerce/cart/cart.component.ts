@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-// Sweet Alert
-import Swal from 'sweetalert2';
-
 import { Cart } from './cart.model';
 import { cartData } from './data';
 
@@ -45,7 +42,6 @@ export class CartComponent implements OnInit {
     this.cartData = cartData;
   }
 
-
    // Default
    counter : any = 0;
    increment(id:any) {
@@ -60,24 +56,5 @@ export class CartComponent implements OnInit {
      this.counter--;
      (document.getElementById('cart-'+id) as HTMLInputElement).value = this.counter;
    }
-
-   /**
-   * Confirmation mail model
-   */
-    confirm() {
-      Swal.fire({
-        title: 'Are you sure ?',
-        text: 'Are you sure you want to remove this product ?',
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#f46a6a',
-        confirmButtonText: 'Yes, delete it!',
-        cancelButtonText: 'Close'
-      }).then(result => {
-        if (result.value) {
-          Swal.fire('Deleted!', 'Cart has been deleted.', 'success');
-        }
-      });
-    }
 
 }

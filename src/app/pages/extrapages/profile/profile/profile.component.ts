@@ -46,19 +46,19 @@ export class ProfileComponent implements OnInit {
   /**
    * Swiper setting
    */
-    config = {
-      slidesPerView: 1,
-      initialSlide: 0,
-      spaceBetween: 25,
-      breakpoints:{
-        768:{
-          slidesPerView: 2, 
-        },
-        1200:{
-          slidesPerView: 3, 
-        }
+   config = {
+    slidesPerView: 1,
+    initialSlide: 0,
+    spaceBetween: 25,
+    breakpoints:{
+      768:{
+        slidesPerView: 2, 
+      },
+      1200:{
+        slidesPerView: 3, 
       }
-    };
+    }
+  };
 
   /**
    * Swiper card previous set

@@ -1106,8 +1106,8 @@ private _dynamicLoadedChart(colors:any) {
   }
 
   /**
-  * Column with Group Label Charts
-  */
+ * Column with Group Label Charts
+   */
    private _groupLabelChart(colors:any) {
     colors = this.getChartColorsArray(colors);
     this.groupLabelChart = {

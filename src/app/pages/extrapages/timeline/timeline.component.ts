@@ -34,21 +34,21 @@ export class TimelineComponent implements OnInit {
     ];
   }
 
-    /**
+     /**
    * Swiper setting
    */
-     config = {
-      initialSlide: 0,
-      slidesPerView: 1,
-      breakpoints:{
-        768:{
-          slidesPerView: 2, 
-        },
-        1200:{
-          slidesPerView: 5, 
+      config = {
+        initialSlide: 0,
+        slidesPerView: 1,
+        breakpoints:{
+          768:{
+            slidesPerView: 2, 
+          },
+          1200:{
+            slidesPerView: 5, 
+          }
         }
-      }
-    };
+      };
 
     /**
      * Swiper card previous set

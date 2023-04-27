@@ -41,8 +41,8 @@ export class SellerDetailsComponent {
       { label: 'Seller Details', active: true }
     ];
 
-    // Chart Color Data Get Function
-    this._analyticsChart('["--vz-success", "--vz-primary", "--vz-danger"]');
+     // Chart Color Data Get Function
+    this._analyticsChart('["--vz-primary", "--vz-success", "--vz-danger"]');
   }
 
   // Chart Colors Set

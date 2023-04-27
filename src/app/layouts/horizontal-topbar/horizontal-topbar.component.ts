@@ -139,6 +139,7 @@ export class HorizontalTopbarComponent implements OnInit {
   hasItems(item: MenuItem) {
     return item.subItems !== undefined ? item.subItems.length > 0 : false;
   }
+  
 
   /**
    * remove active and mm-active class

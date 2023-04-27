@@ -41,7 +41,7 @@ export class BuySellComponent {
       { label: 'Buy & Sell', active: true }
     ];
 
-    // Chart Color Data Get Function
+     // Chart Color Data Get Function
     this._marketGraphChart('["--vz-success", "--vz-danger"]');
   }
 

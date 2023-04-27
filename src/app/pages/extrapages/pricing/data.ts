@@ -35,7 +35,7 @@
       domainClass :"danger",
       domainClassSymbol :"close",
       ribbon:false,
-      planButtonClassname: "success"
+      planButtonClassname: "info"
   },
   {
       id : 3,
@@ -52,7 +52,7 @@
       domainClass :"danger",
       domainClassSymbol :"close",
       ribbon:true,
-      planButtonClassname: "success"
+      planButtonClassname: "info"
   },
   {
       id : 4,
@@ -69,7 +69,7 @@
       domainClass :"success",
       domainClassSymbol :"checkbox",
       ribbon:false,
-      planButtonClassname: "success"
+      planButtonClassname: "info"
   },
 ]
 
@@ -173,7 +173,7 @@ const pricingPlan=[
       domainClass :"danger",
       domainClassSymbol :"close",
       ribbon:false,
-      planButtonClassname: "soft-success"
+      planButtonClassname: "soft-secondary"
   },
   {
     id : 2,

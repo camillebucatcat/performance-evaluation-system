@@ -22,7 +22,7 @@ export class LayoutComponent implements OnInit {
   constructor(private eventService: EventService) { }
 
   ngOnInit(): void {
-    this.layoutType = LAYOUT_HORIZONTAL;
+    this.layoutType = LAYOUT_VERTICAL;
 
      // listen to event and change the layout, theme, etc
      this.eventService.subscribe('changeLayout', (layout) => {

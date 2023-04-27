@@ -9,7 +9,7 @@ export const MENU: MenuItem[] = [
   {
     id: 2,
     label: 'MENUITEMS.DASHBOARD.TEXT',
-    icon: 'bx bxs-dashboard',
+    icon: 'las la-tachometer-alt',
     subItems: [
       {
         id: 3,
@@ -52,7 +52,7 @@ export const MENU: MenuItem[] = [
   {
     id: 8,
     label: 'MENUITEMS.APPS.TEXT',
-    icon: 'bx bx-layer',
+    icon: 'lab la-delicious',
     subItems: [
       {
         id: 9,
@@ -413,7 +413,7 @@ export const MENU: MenuItem[] = [
   {
     id: 55,
     label: 'MENUITEMS.AUTHENTICATION.TEXT',
-    icon: 'bx bx-user-circle',
+    icon: 'lar la-user-circle',
     subItems: [
       {
         id: 56,
@@ -609,7 +609,7 @@ export const MENU: MenuItem[] = [
   {
     id: 82,
     label: 'MENUITEMS.PAGES.TEXT',
-    icon: 'bx bx-file',
+    icon: 'las la-pager',
     subItems: [
       {
         id: 83,
@@ -718,7 +718,7 @@ export const MENU: MenuItem[] = [
   {
     id: 82,
     label: 'MENUITEMS.BASEUI.TEXT',
-    icon: 'bx bx-palette',
+    icon: 'las la-pencil-ruler',
     subItems: [
       {
         id: 98,
@@ -866,7 +866,7 @@ export const MENU: MenuItem[] = [
     subItems: [{
       id: 121,
       label: 'MENUITEMS.ADVANCEUI.TEXT',
-      icon: 'bx bx-briefcase-alt',
+      icon: 'las la-briefcase',
       badge: {
         variant: 'bg-success',
         text: 'MENUITEMS.ADVANCEUI.BADGE',
@@ -924,13 +924,13 @@ export const MENU: MenuItem[] = [
       {
         id: 131,
         label: 'MENUITEMS.WIDGETS.TEXT',
-        icon: 'bx bx-aperture',
+        icon: 'las la-flask',
         link: '/widgets'
       },
       {
         id: 132,
         label: 'MENUITEMS.FORMS.TEXT',
-        icon: 'bx bx-receipt',
+        icon: 'lar la-newspaper',
         subItems: [
           {
             id: 133,
@@ -1009,7 +1009,7 @@ export const MENU: MenuItem[] = [
       {
         id: 145,
         label: 'MENUITEMS.TABLES.TEXT',
-        icon: 'bx bx-table',
+        icon: 'las la-table',
         subItems: [
           {
             id: 146,
@@ -1034,7 +1034,7 @@ export const MENU: MenuItem[] = [
       {
         id: 149,
         label: 'MENUITEMS.CHARTS.TEXT',
-        icon: 'bx bx-doughnut-chart',
+        icon: 'las la-chart-pie',
         subItems: [
           {
             id: 150,
@@ -1156,7 +1156,7 @@ export const MENU: MenuItem[] = [
       {
         id: 169,
         label: 'MENUITEMS.ICONS.TEXT',
-        icon: 'bx bx-tone',
+        icon: 'lab la-fonticons',
         subItems: [
           {
             id: 170,
@@ -1193,7 +1193,7 @@ export const MENU: MenuItem[] = [
       {
         id: 175,
         label: 'MENUITEMS.MAPS.TEXT',
-        icon: 'bx bx-map-alt',
+        icon: 'las la-map',
         subItems: [
           {
             id: 176,
@@ -1212,7 +1212,7 @@ export const MENU: MenuItem[] = [
       {
         id: 179,
         label: 'MENUITEMS.MULTILEVEL.TEXT',
-        icon: 'bx bx-sitemap',
+        icon: 'las la-folder-plus',
         subItems: [
           {
             id: 180,
@@ -1239,5 +1239,4 @@ export const MENU: MenuItem[] = [
       }
     ]
   },
-
 ];

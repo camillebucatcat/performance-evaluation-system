@@ -933,7 +933,7 @@ export class CandlestickComponent implements OnInit {
       }
     };
   }
- 
+  
   /**
  * Category X-Axis
  */

@@ -150,7 +150,7 @@ export class CryptoComponent implements OnInit {
   /**
  * Market Graph Chart
  */
-   private _marketGraphChart(colors:any) {
+  private _marketGraphChart(colors:any) {
     colors = this.getChartColorsArray(colors);
     this.marketGraphChart = {
       series: [{
@@ -446,10 +446,10 @@ export class CryptoComponent implements OnInit {
     this.NewsFeed = NewsFeed;
   }
 
-  /**
+ /**
    * Swiper setting
    */
-   config = {
+  config = {
     initialSlide: 0,
     slidesPerView: 1,
     spaceBetween: 25,

@@ -18,8 +18,8 @@ export class RadialbarComponent implements OnInit {
   customAngleChart: any;
   gradientCircleChart: any;
   strokedCircleChart: any;
-  radialbarsChart: any;
   semiCircleChart: any;
+  radialbarsChart: any;
 
   constructor() { }
 
@@ -306,7 +306,7 @@ export class RadialbarComponent implements OnInit {
     };
   }
 
-  /**
+/**
  * Stroked Circular Gauge
  */
  private _radialbarsChart(colors:any) {

@@ -49,15 +49,15 @@ export class TopbarComponent implements OnInit {
   /**
    * Toggle the menu bar when having mobile screen
    */
-   toggleMobileMenu() {
-    if (document.documentElement.getAttribute('data-layout') === "twocolumn") {
-      document.body.classList.contains('twocolumn-panel') ? document.body.classList.remove('twocolumn-panel') : document.body.classList.add('twocolumn-panel');
+     toggleMobileMenu(event: any) {
+      event.preventDefault();
+      this.mobileMenuButtonClicked.emit();
+      if (window.screen.width <= 1024) {
+        document.body.classList.toggle('menu');
+        document.documentElement.setAttribute('data-sidebar-size', 'lg');
+        document.body.classList.toggle('vertical-sidebar-enable');
+      }
     }
-    if (window.screen.width <= 1024) {
-      document.body.classList.toggle('menu');
-      document.body.classList.toggle('vertical-sidebar-enable');
-    }
-}
 
   /**
    * Fullscreen method

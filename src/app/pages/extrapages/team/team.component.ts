@@ -43,18 +43,19 @@ export class TeamComponent implements OnInit {
   /**
    * on settings button clicked from topbar
    */
-   onTeamButtonClicked() {
-    document.body.classList.toggle('right-bar-enabled');
-    const overlay = document.querySelector('.team-overlay');
-    if(overlay != null){
-      overlay.classList.add('show');
+     onTeamButtonClicked() {
+      document.body.classList.toggle('right-bar-enabled');
+      const overlay = document.querySelector('.team-overlay');
+      if(overlay != null){
+        overlay.classList.add('show');
+      }
+      const rightBar = document.getElementById('offcanvasExample');
+      if(rightBar != null){
+        rightBar.classList.toggle('show');
+        rightBar.setAttribute('style',"visibility: visible;");
+
+      }
     }
-    const rightBar = document.getElementById('offcanvasExample');
-    if(rightBar != null){
-      rightBar.classList.toggle('show');
-      rightBar.setAttribute('style',"visibility: visible;");
-    }
-  }
 
   /**
    * Open modal

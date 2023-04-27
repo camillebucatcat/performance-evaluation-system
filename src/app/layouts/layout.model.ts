@@ -11,13 +11,12 @@ export const LAYOUT_WIDTH = 'fluid';
 
 export const LAYOUT_POSITION = 'fixed';
 
-export const TOPBAR = 'dark';
+export const TOPBAR = 'light';
 
-export const SIDEBAR_SIZE = 'lg';
+export const SIDEBAR_SIZE = 'sm-hover';
 
 export const SIDEBAR_VIEW = 'default';
 
 export const SIDEBAR_COLOR = 'dark';
 
 export const SIDEBAR_IMAGE = 'none';
-

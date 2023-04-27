@@ -39,15 +39,14 @@ export class CrmComponent implements OnInit {
      */
     this.fetchData();
 
-    // Chart Color Data Get Function
-    this._salesForecastChart('["--vz-primary", "--vz-success", "--vz-warning"]');
-    this._DealTypeChart('["--vz-warning", "--vz-danger", "--vz-success"]');
-    this._splineAreaChart('["--vz-success", "--vz-danger"]');
-
+     // Chart Color Data Get Function
+     this._salesForecastChart('["--vz-primary", "--vz-success", "--vz-danger"]');
+     this._DealTypeChart('["--vz-warning", "--vz-secondary", "--vz-success"]');
+     this._splineAreaChart('["--vz-success", "--vz-danger"]');
   }
 
-  // Chart Colors Set
-  private getChartColorsArray(colors:any) {
+   // Chart Colors Set
+   private getChartColorsArray(colors:any) {
     colors = JSON.parse(colors);
     return colors.map(function (value:any) {
       var newValue = value.replace(" ", "");
@@ -161,7 +160,7 @@ export class CrmComponent implements OnInit {
   /**
  * Deal Type Chart
  */
-  private _DealTypeChart(colors:any) {
+   private _DealTypeChart(colors:any) {
     colors = this.getChartColorsArray(colors);
     this.DealTypeChart = {
       series: [{
@@ -206,7 +205,7 @@ export class CrmComponent implements OnInit {
   /**
  * Splie-Area Chart
  */
-   private _splineAreaChart(colors:any) {
+  private _splineAreaChart(colors:any) {
     colors = this.getChartColorsArray(colors);
     this.splineAreaChart = {
       series: [{
@@ -243,6 +242,7 @@ export class CrmComponent implements OnInit {
       }
     };
   }
+
 
   /**
    * Fetches the data
