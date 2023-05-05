@@ -1,59 +1,55 @@
-<div class="auth-page-wrapper pt-5">
+<div class="auth-page-wrapper pt-1">
   <!-- auth page bg -->
-  <div class="auth-one-bg-position auth-one-bg"  id="auth-particles">
-      <div class="bg-overlay"></div>
-
-      <div class="shape">
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 120">
-              <path d="M 0,36 C 144,53.6 432,123.2 720,124 C 1008,124.8 1296,56.8 1440,40L1440 140L0 140z"></path>
-          </svg>
-      </div>
-  </div>
+    <div class="bg-logo">
+        <img src="assets/images/Bg-logo.png" height="434" >
+       
+    </div>
+  
 
   <!-- auth page content -->
   <div class="auth-page-content">
       <div class="container">
           <div class="row">
               <div class="col-lg-12">
-                  <div class="text-center mt-sm-5 mb-4 text-white-50">
+                  <div class="text-center mt-sm-5 mb-2 text-white-50">
                       <div>
                           <a routerLink="/" class="d-inline-block auth-logo">
-                              <img src="assets/images/logo-light.png" alt="" height="20">
+                              <img src="assets/images/dark-xentra-logo.png" alt="" height="60" width="192">
                           </a>
                       </div>
-                      <p class="mt-3 fs-15 fw-medium">Premium Admin & Dashboard Template</p>
+                      <p class="mt-1 fs-16 fw-semibold" style="font-family: 'Poppins';">Performance Evaluation System.</p>
                   </div>
               </div>
           </div>
           <!-- end row -->
 
           <div class="row justify-content-center">
-              <div class="col-md-8 col-lg-6 col-xl-5">
-                  <div class="card mt-4">
+              <div class="col-md-6 col-lg-4 col-xl-5">
+                  <div class="card mt-1.50">
 
                       <div class="card-body p-4">
                           <div class="text-center mt-2">
-                              <h5 class="text-primary">Welcome Back !</h5>
-                              <p class="text-muted">Sign in to continue to Velzon.</p>
+                              <h5 style="color:#30373A" style="font-family: 'Poppins';">WELCOME TO XENTRA!</h5>
+                              <p style="color:#30373A" style="font-family: 'Poppins';">Sign in your account to continue.</p>
                           </div>
-                          <div class="p-2 mt-4">
+                          <div class="p-4 mt-4">
                               <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
 
-                                  <div class="mb-3">
-                                      <label for="username" class="form-label">Username</label>
-                                      <input type="text" class="form-control" id="username" placeholder="Enter username" formControlName="name" [ngClass]="{ 'is-invalid': submitted && f['name'].errors }">
+                                  <div class="mb-1">
+                                      <label for="username" class="form-label mb-0">Email</label>
+                                      <input type="text" class="form-control" id="username" placeholder="Enter your email." formControlName="name" [ngClass]="{ 'is-invalid': submitted && f['name'].errors }">
                                       <div *ngIf="submitted && f['name'].errors" class="invalid-feedback" align="left">
-                                        <div *ngIf="f['name'].errors['required']">Username is required</div>
+                                        <div *ngIf="f['name'].errors['required']" >Email is required</div>
                                       </div>
                                   </div>
 
-                                  <div class="mb-3">
+                                  <div class="mb-1">
                                       <div class="float-end">
-                                          <a routerLink="/auth/pass-reset/basic" class="text-muted">Forgot password?</a>
+                                          <a routerLink="/auth/pass-reset/basic" class="text-muted" style="font-family: 'Poppins';">Forgot password?</a>
                                       </div>
-                                      <label class="form-label" for="password-input">Password</label>
+                                      <label class="form-label mb-0" for="password-input">Password</label>
                                       <div class="position-relative auth-pass-inputgroup mb-3">
-                                          <input [type]="fieldTextType ? 'text' : 'password'" class="form-control pe-5" placeholder="Enter password" id="password-input" formControlName="password"
+                                          <input [type]="fieldTextType ? 'text' : 'password'" class="form-control pe-5 " placeholder="Enter your password." id="password-input" formControlName="password"
                                           [ngClass]="{ 'is-invalid': submitted && f['password'].errors }">
                                           <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted" type="button" id="password-addon"><i class="mdi align-middle" [ngClass]="{'mdi-eye-off-outline': !fieldTextType, 'mdi-eye-outline': fieldTextType
                                           }" (click)="toggleFieldTextType()"></i></button>
@@ -65,24 +61,25 @@
 
                                   <div class="form-check">
                                       <input class="form-check-input" type="checkbox" value="" id="auth-remember-check">
-                                      <label class="form-check-label" for="auth-remember-check">Remember me</label>
+                                      <label class="form-check-label" for="auth-remember-check" style="font-family: 'Poppins';">Remember me</label>
                                   </div>
 
                                   <div class="mt-4">
-                                      <button class="btn btn-success w-100" type="submit">Sign In</button>
+                                      <button class="btn btn-success w-100" type="submit" style="font-family: 'Poppins';">Sign In</button>
                                   </div>
 
-                                  <div class="mt-4 text-center">
+                                  <!-- <div class="mt-4 text-center">
                                       <div class="signin-other-title">
                                           <h5 class="fs-13 mb-4 title">Sign In with</h5>
                                       </div>
-                                      <div class="d-flex gap-2 justify-content-center"> 
+                                      
+                                       <div class="d-flex gap-2 justify-content-center"> 
                                           <button type="button" class="btn btn-primary btn-icon waves-effect waves-light"><i class="ri-facebook-fill fs-16"></i></button>
                                           <button type="button" class="btn btn-danger btn-icon waves-effect waves-light"><i class="ri-google-fill fs-16"></i></button>
                                           <button type="button" class="btn btn-dark btn-icon waves-effect waves-light"><i class="ri-github-fill fs-16"></i></button>
                                           <button type="button" class="btn btn-info btn-icon waves-effect waves-light"><i class="ri-twitter-fill fs-16"></i></button>
                                       </div>
-                                  </div>
+                                  </div> -->
                               </form>
                           </div>
                       </div>
@@ -90,8 +87,8 @@
                   </div>
                   <!-- end card -->
 
-                  <div class="mt-4 text-center">
-                      <p class="mb-0">Don't have an account ? <a routerLink="/auth/signup/basic" class="fw-semibold text-primary text-decoration-underline"> Signup </a> </p>
+                  <div class="mt-0 text-center">
+                      <p class="mb-4" style="font-family: 'Poppins';">Don't have an account ? <a routerLink="/auth/signup/basic" class="fw-semibold text-primary text-decoration-underline" style="font-family: 'Poppins';"> Signup </a> </p>
                   </div>
 
               </div>
@@ -103,7 +100,7 @@
   <!-- end auth page content -->
 
   <!-- footer -->
-  <footer class="footer">
+  <!-- <footer class="footer">
       <div class="container">
           <div class="row">
               <div class="col-lg-12">
@@ -113,7 +110,7 @@
               </div>
           </div>
       </div>
-  </footer>
+  </footer> -->
   <!-- end Footer -->
 </div>
 <!-- end auth-page-wrapper -->
