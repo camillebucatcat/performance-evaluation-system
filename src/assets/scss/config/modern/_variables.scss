@@ -12,8 +12,8 @@
 $variable-prefix:             vz-;
 
 // Font Family
-$font-family-primary:                             'IBM Plex Sans', sans-serif;
-$font-family-secondary:                           'IBM Plex Sans', sans-serif;
+$font-family-primary:                             'Poppins';
+$font-family-secondary:                           'Poppins';
 
 //
 // Vertical Menu
@@ -157,8 +157,8 @@ $gray-100: #f3f6f9;
 $gray-200: #eff2f7;
 $gray-300: #e9ebec;
 $gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #878a99;
+$gray-500: #D9D9D9;
+$gray-600: #888A98;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
@@ -181,16 +181,18 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:       #5ea3cb;
+$blue:       #1F91CB;
 $indigo:     #405189;
 $purple:     #7084c7;
 $pink:       #f672a7;
 $red:        #fa896b;
 $orange:     #f1963b;
 $yellow:     #f7b84b;
-$green:      #6ada7d;
+$green:      #92C34F;
 $teal:       #02a8b5;
 $cyan:       #58caea;
+$gray:       #888A98;
+$darkblack:  #30373A;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -206,8 +208,12 @@ $colors: (
   "teal":       $teal,
   "cyan":       $cyan,
   "white":      $white,
+  "gray-ultra": $gray-100,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-light": $gray-700,
+  "gray-med":   $gray-500,
+  "gray-dark":  $gray-800,
+  "black":      $darkblack
 );
 // scss-docs-end colors-map
 

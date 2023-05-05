@@ -39,7 +39,7 @@
 
             &::after {
                 content: "";
-                background: $primary;
+                background: $text-muted;
                 height: 1px;
                 position: absolute;
                 width: 100%;
@@ -50,7 +50,7 @@
             }
 
             &.active {
-                color: $primary;
+                color: $black;
 
                 &:after {
                     transform: scale(1);
@@ -114,7 +114,7 @@
 
             &.active {
                 &:before {
-                    border-top-color: $primary;
+                    border-top-color: $black;
                 }
             }
         }
