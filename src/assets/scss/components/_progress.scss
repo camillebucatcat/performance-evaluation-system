@@ -86,7 +86,7 @@
             position: absolute;
             top: -25px;
             right: -9px;
-            background-color: $primary;
+            background-color: $success;
             color: $white;
             display: inline-block;
             line-height: 18px;
@@ -97,7 +97,7 @@
                 content: "";
                 position: absolute;
                 border: 4px solid transparent;
-                border-top-color: $primary;
+                border-top-color: $success;
                 bottom: -7px;
                 left: 50%;
                 transform: translateX(-50%);

@@ -5,3 +5,83 @@ Website: https://themesbrand.com/
 Contact: support@themesbrand.com
 File: Custom Css File
 */
+.exe{
+    text-align: end;
+}
+
+.btn{
+    // width: 130px;
+    // height: 50px;
+    border-radius: 10px;
+}
+.updbtn{
+    margin-right: 33px;
+}
+.cpassbtn{
+    margin-top: -19px;
+}
+.gasterik{
+    color: $green;
+    margin-left: 5px;
+}
+.nav-txt{
+    --vz-link-color: grey;
+    --vz-link-hover-color: $black;
+}
+.coloredlink{
+    color: $darkblack !important;
+}
+.card-title{
+    --vz-heading-color: $black;
+}
+.progress{
+    --vz-progress-bg: #D9D9D9;
+}
+.viewbg{
+    background-color: $gray-500;
+}
+.pashistory{
+    background-color: #F3F3F8 !important;
+}
+.form-control{
+    --vz-input-focus-border: $black;
+}
+
+// logout scrollbar 
+.scroll-bg{
+    height: 252px;
+    padding-right: 7px;
+    // scrollbar-width: 2px;
+    // scrollbar-color: $black $darkblack;
+    // ::-webkit-scrollbar {
+    //     width: 2px;
+    //     background-color: #f5f5f5;
+    //   }
+    //   ::-webkit-scrollbar-thumb {
+    //     background-color: #000000;
+    //   }
+    //   ::-webkit-scrollbar-track {
+    //     background-color: $darkblack;
+    //   }
+}
+
+.scroll-bg {
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+  /* Hide scrollbar by default */
+  ::-webkit-scrollbar {
+    width: 2px;
+    height: 0px;
+    background-color: $white;
+  }
+
+  /* Make scrollbar visible when needed */
+  ::-webkit-scrollbar-thumb {
+    background-color: $black;
+  }
+
+  /* Make scrollbar track visible when needed */
+  ::-webkit-scrollbar-track {
+    background-color: $gray-500;
+  }
